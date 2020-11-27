@@ -11,7 +11,11 @@ export const Student = ({ name, score, uni, id }) => {
     <div className={styles.student}>
       <div className={styles.std_data}>
         <h2>{name}</h2>
-        <p>{uni}</p>
+        <p>
+          {uni}{" "}
+          {score > 350 && <small className={styles.success}>succes</small>}
+          {score < 250 && <small className={styles.fail}>fail</small>}
+        </p>
         <Button
           variant="contained"
           onClick={() => handleDispatch({ type: "INCREMENT", payload: id })}

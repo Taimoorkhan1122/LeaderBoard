@@ -23,3 +23,15 @@ h2 {
     line-height: 30px;
 }
 
+.success {
+    background-color: #48f782;
+    color: #fff;
+    border-radius: 5px;
+    padding: 3px;
+}
+.fail {
+    background-color: #f74848;
+    color: #fff;
+    border-radius: 5px;
+    padding: 3px;
+}
